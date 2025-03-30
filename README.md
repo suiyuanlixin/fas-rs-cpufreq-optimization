@@ -1,3 +1,5 @@
+> **[README_EN.md](README_EN.md)**
+
 # **fas-rs-cpufreq-optimization**
 
 ## **模块简介**
