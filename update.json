@@ -2,5 +2,5 @@
   "versionCode": 21,
   "version": "v0.2.1",
   "zipUrl": "https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/download/v0.2.1/fas-rs-c-o_v0.2.1.zip",
-  "changelog": "https://github.com/shadow3aaa/8gen3-offset-fas-rs-extension/raw/main/SUPPORTED_GAMES.md"
+  "changelog": "https://raw.githubusercontent.com/suiyuanlixin/fas-rs-cpufreq-optimization/refs/heads/main/changelog.md"
 }
