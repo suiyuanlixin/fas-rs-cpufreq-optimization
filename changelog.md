@@ -1,3 +1,7 @@
+# [v0.2.2](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.2.2)
+- 添加 updateJson 支持云更新
+- 调整优化部分配置
+
 # [v0.2.1](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.2.1)
 - 修复一些已知问题
 - 调整 GameTurbo 模式
