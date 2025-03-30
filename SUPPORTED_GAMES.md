@@ -1,14 +1,24 @@
 # **Supported Games**
 
-- 原神(官服，米服，B服)
+- 原神
 - Genshin Impact
 - 王者荣耀
-- Honor Of Kings
-- 我的世界(网易)
-- Minecraft PE
+- Honor of Kings
+- 火影忍者
+- 和平精英
+- PUBG Mobile
+- 鸣潮
+- 穿越火线-枪战王者
+- 时空猎人
+- 英雄联盟手游
+- QQ飞车
+- 永劫无间
+- 光遇
 - 绝区零
 - Zenless Zone Zero
-- 元气骑士(Soul Knight)
-- 英雄联盟手游
-- 逆水寒
-- 崩坏：星穹铁道
+- 金铲铲之战
+- 第五人格
+- 使命召唤手游
+- 三国杀
+- 明日方舟
+- 暗区突围
