@@ -7,7 +7,7 @@
 - ~~搭配 fas-rs-pro-max 最新版可开启实验性功能~~（已弃用）
 - 模块拥有较为完善的冲突检测系统，若检测到冲突请卸载冲突模块
 - 建议搭配 **[Asoulopt](https://github.com/nakixii/Magisk_AsoulOpt)** 或 [Thread-opt](https://github.com/reigadegr/thread-opt) 或 核心分配 等（选其一）
-- Action 按钮：选择切换 [GameTurbo](#gameturbo-模式) 模式
+- Action 按钮：选择切换 [GameTurbo 模式](#gameturbo-模式)
 
 ## **支持的处理器**
 - 骁龙 8 Elite
