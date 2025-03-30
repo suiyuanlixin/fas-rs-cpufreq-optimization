@@ -1,0 +1,92 @@
+# [v0.2.1](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.2.1)
+- Fixed known issues
+- Tuned GameTurbo mode
+
+# [v0.2.0](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.2.0)
+- Added support for a large number of games
+
+# [v0.1.6](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.1.6)
+- Resolved major historical issues
+- Now compatible with [fas-rs-usage-clamping](https://github.com/suiyuanlixin/fas-rs-usage-clamping)
+- Displays plugin in Scene after installing fas-rs-usage-clamping
+<blockquote>
+  <details>
+    <summary>
+      Scene console
+    </summary>
+    <img src="https://github.com/user-attachments/assets/82eb03cb-255e-436b-918a-5dc6b9aa8365">
+  </details>
+</blockquote>
+
+# [v0.1.5](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.1.5)
+- Fixed language detection issues on some systems
+
+# [v0.1.3.beta.23](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.1.3.beta.23)
+- Optional Games-opt update method
+- Displays plugin in Scene after installing fas-rs-mod
+<blockquote>
+  <details>
+    <summary>
+      Scene console
+    </summary>
+    <img src="https://github.com/user-attachments/assets/2e008097-be34-4333-bec6-4a4fa48df319">
+  </details>
+</blockquote>
+
+# [v0.1.3.beta.11](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.1.3.beta.11)
+- Improved uninstall script
+- Enabled Games-opt installation for Snapdragon 8 Elite
+
+# [v0.1.3.beta.09](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.1.3.beta.09)
+- Added optional Games-opt installation (forked from [@SutoLiu](https://gitee.com/sutoliu)'s [AppOpt](https://gitee.com/sutoliu/AppOpt))
+- Optimized game performance for Snapdragon 8 Elite
+- Added optional SCX governor switching (Snapdragon 8 Gen 3 and Snapdragon 8 Elite on O-based systems)
+
+# [v0.1.2.beta.01](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.1.2.beta.01)
+- Fixed known issues
+- Updated version numbers
+<blockquote>
+  Asoulopt mode2<br>
+  fas-rs-perf v4.6.0<br>
+  fas-rs cpufreq-opt<br>
+  <details>
+    <summary>
+      Scene logs
+    </summary>
+    <img src="https://github.com/user-attachments/assets/9717fbc7-a6da-48d8-bfdc-bb7b01bbaade">
+    <img src="https://github.com/user-attachments/assets/dcdee4a8-94f4-48fb-b65b-faaee6462dbe">
+  </details>
+</blockquote>
+
+# [v0.1.1.beta.03](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.1.1.beta.03)
+- Refined Honor of Kings (King Glory) strategy for kalama
+- Preliminary support for PUBG Mobile
+- Preliminary support for Peacekeeper Elite (Cross Fire: Gun Master)
+- Preliminary support for潮鸣 (Mingtang)
+- Significantly reduced redundant configurations
+- Fixed GameTurbo mode error reporting
+- Fixed conflict detection issues
+- Fixed GameTurbo mode auto-disabling after reboot
+- Added optional CPU6 disablement for Snapdragon 8 Elite
+
+# [v0.1.0](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.1.0)
+- Adjusted Honor of Kings/Genshin Impact strategies
+- Added Naruto Shippuden configuration
+- Added cleanup for fas-rs-mod uninstall residues
+
+# [v0.0.9](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.0.9)
+- Fixed package name matching issues
+- Fixed some incorrect prompt displays
+
+# [v0.0.8](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.0.8)
+- Added GameTurbo series configurations
+- Fixed fas-rs-mod plugin installation failure
+- Resolved known issues
+- Added Action button: Toggle GameTurbo mode
+- GameTurbo mode: Switches GameTurbo settings and disables thermal control
+
+# [v0.0.7](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.0.7)
+- Second new version!
+
+# [v0.0.6](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.0.6)
+- First new version!
