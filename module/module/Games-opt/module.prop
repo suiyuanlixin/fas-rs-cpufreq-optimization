@@ -1,7 +1,0 @@
-id=fas_rs_cpufreq_optimization
-name=fas-rs-cpufreq-optimization
-version=v0.2.1
-betaVersion=Release1
-versionCode=21
-author=Skyi_Lici
-description=An extension for optimizing the CPU frequency of fas-rs.
