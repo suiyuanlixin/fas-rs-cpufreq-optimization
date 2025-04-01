@@ -21,10 +21,15 @@ DIR=/sdcard/Android/fas-rs
 CONF=$DIR/games.toml
 MOD_DIR=/data/adb/fas-rs
 MOD_CONF=$MOD_DIR/games.toml
-# qid_blacklist=(
-#     3287712599
-#     535426846
-#     2042863287
+
+# declare -A qid_blacklist=(
+#     ["3287712599"]="默"
+#     ["535426846"]="风逝青云"
+#     ["2042863287"]="立刻有"
+#     ["3516867581"]="土匪"
+#     ["2825750948"]="土匪"
+#     ["2716543560"]="lzlzan"
+#     ["1043750289"]="Lithium"
 # )
 
 key_check() {
@@ -75,6 +80,22 @@ local_print() {
 	fi
 }
 
+local_echo() {
+	if [ $LOCALE = zh-CN ]; then
+		echo "$1"
+	else
+		echo "$2"
+	fi
+}
+
+if [ $LOCALE = zh-CN ]; then
+    changelog=$MODPATH/changelog/changelog_cn.md
+else
+    changelog=$MODPATH/changelog/changelog_en.md
+fi
+
+local_echo "updateJson=https://raw.githubusercontent.com/suiyuanlixin/fas-rs-cpufreq-optimization/refs/heads/main/update.json" "updateJson=https://raw.githubusercontent.com/suiyuanlixin/fas-rs-cpufreq-optimization/refs/heads/main/update_en.json" >> $MODPATH/module.prop
+
 [ $LOCALE != zh-CN ] && ui_print "- Warning: This script is gpt-translated and may contain inaccuracies or errors."
 
 if [ "$(getprop fas-rs-installed)" = "" ] && [ ! -f "/data/adb/fas-rs/fas-rs-mod-installed" ]; then
@@ -100,9 +121,14 @@ else
     fi
 fi
 
-# for qid in "${qid_blacklist[@]}"; do
+# for qid in "${!qid_blacklist[@]}"; do
+#     username="${qid_blacklist[$qid]}"
 #     if [ -f "/data/user/0/com.tencent.mobileqq/databases/${qid}.db" ]; then
-#         local_print "- 不建议此用户刷入本模块" "- Not recommended for this user to install this module."
+#         if [[ "$username" == "土匪" ]]; then
+#             local_print "- 你的设备已被Skyi_Lici入侵" "- Your device has been hacked by Skyi_Lici."
+#         else
+#             local_print "- 不建议此用户刷入本模块" "- Not recommended for this user to install this module."
+#         fi
 #         break
 #     fi
 # done
@@ -220,6 +246,32 @@ if [ -d $MODULE_PATH/fas_ext ]; then
             ;;
     esac
 fi
+
+local_print "- 是否显示当前版本的更新日志？
+- 音量↑：是
+- 音量↓：否" "- Whether to display the changelog for the current version?
+- Volume key↑: Yes
+- Volume key↓: No"
+key_check
+case "$keycheck" in
+    "KEY_VOLUMEUP")
+        print ""
+        awk '{
+            if ($0 ~ /^# \[/) {
+                if (count == 1) {
+                    exit
+                }
+                start = index($0, "[") + 1
+                end = index($0, "]")
+                version = substr($0, start, end - start)
+                print "# " version
+                count++
+            } else {
+                print $0
+            }
+        }' "$changelog"
+        ;;
+esac
 
 local_print "- 是否关闭fas-rs对小核集群的频率控制？
 - 音量↑：是
@@ -467,6 +519,23 @@ case "$keycheck" in
         ;;
 esac
 
+local_print "- 是否默认开启GameTurbo模式？
+- 音量↑：是
+- 音量↓：否" "- Whether to enable GameTurbo mode by default?
+- Volume key↑: Yes
+- Volume key↓: No"
+key_check
+case "$keycheck" in
+    "KEY_VOLUMEUP")
+        > "$MODPATH/configs/gameturbo/gameturbo-installed"
+        echo "true" > "$MODPATH/configs/gameturbo/gameturbo-installed"
+        ;;
+    "KEY_VOLUMEDOWN")
+        > "$MODPATH/configs/gameturbo/gameturbo-installed"
+        echo "false" > "$MODPATH/configs/gameturbo/gameturbo-installed"
+        ;;
+esac
+
 case "$soc_model" in
     "SM8750")
         cp "$MODPATH/configs/sun.lua" "$MODPATH/main.lua"
@@ -481,3 +550,5 @@ case "$soc_model" in
         cp "$MODPATH/configs/taro.lua" "$MODPATH/main.lua"
         ;;
 esac
+
+local_print "- 愚人节快乐！" "-  Happy April Fool's Day!"
