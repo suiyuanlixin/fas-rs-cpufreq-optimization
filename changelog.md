@@ -1,3 +1,6 @@
+# [v0.2.3.beta.01](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.2.3.beta.01)
+- 愚人节快乐！
+
 # [v0.2.2](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.2.2)
 - 添加 updateJson 支持云更新
 - 调整优化部分配置
