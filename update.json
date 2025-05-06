@@ -1,6 +1,6 @@
 {
-  "versionCode": 23,
-  "version": "v0.2.3.beta.01",
-  "zipUrl": "https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/download/v0.2.3.beta.01/fas-rs-c-o_v0.2.3.beta.01.zip",
+  "versionCode": 34,
+  "version": "v0.2.4.r2",
+  "zipUrl": "https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/download/v0.2.4/fas-rs-c-o_v0.2.4.r2.zip",
   "changelog": "https://raw.githubusercontent.com/suiyuanlixin/fas-rs-cpufreq-optimization/refs/heads/main/changelog.md"
 }
