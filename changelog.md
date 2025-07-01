@@ -1,3 +1,8 @@
+# [v0.2.7.release](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.2.7)
+### New start !
+### Changelog: None !
+### Enjoy it !
+
 # [v0.2.4](https://github.com/suiyuanlixin/fas-rs-cpufreq-optimization/releases/tag/v0.2.4)
 - 调整和平精英等游戏
 - 调整王者荣耀等游戏
